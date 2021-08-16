@@ -20,18 +20,18 @@ XMRig is a high performance, open source, cross platform RandomX, KawPow, Crypto
 
 ## Usage
 install termux from fdroid
-  termux-setup-storage
-  pkg install cmake
-  git clone https://BenjaminWegener/xmrig-termux-monero
-  cd xmrig-termux-monero
-  mkdir build
-  cd build
-  cmake .. -DWITH_HWLOC=OFF
-  make
-  cd ../..
+- termux-setup-storage
+- pkg install cmake git
+- git clone https://github.com/BenjaminWegener/xmrig-termux-monero
+- cd xmrig-termux-monero
+- mkdir build
+- cd build
+- cmake .. -DWITH_HWLOC=OFF
+- make -j4
+- cd ../..
 
 to mine for me, enter following info:
-  ./xmrig/build/xmrig -o randomxmonero.eu.nicehash.com:3380 -u 37aFUy4SPzWc2CzT6yuhkWfcjCVR2r6FRE --coin monero
+- ./xmrig/build/xmrig -o randomxmonero.eu.nicehash.com:3380 -u 37aFUy4SPzWc2CzT6yuhkWfcjCVR2r6FRE --coin monero
   
 
 * **[Wizard](https://xmrig.com/wizard)** helps you create initial configuration for the miner.
